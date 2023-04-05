@@ -1,28 +1,18 @@
 #include "main.h"
 /**
- * _strspn - Entry point
- * @s: input
- * @accept: input
- * Return: Always 0 (Success)
+ * _strchr - find an occurance
+ * @s: str to be scanned
+ * @c: char to find
+ * Return: first occur or null
  */
-unsigned int _strspn(char *s, char *accept)
+char *_strchr(char *s, char c)
 {
-        unsigned int n = 0;
-        int r;
+	int i;
 
-        while (*s)
-        {
-                for (r = 0; accept[r]; r++)
-                {
-                        if (*s == accept[r])
-                        {
-                                n++;
-                                break;
-                        }
-                        else if (accept[r + 1] == '\0')
-                                return (n);
-                }
-                s++;
-        }
-        return (n);
+	for (i = 0; s[i] >= '\0'; i++)
+	{
+		if (s[i] == c)
+			return (&s[i]);
+	}
+	return (0);
 }
