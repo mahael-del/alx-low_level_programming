@@ -3,7 +3,7 @@
  * _strchr - Entry point
  * @s: input
  * @c: input
- * Return: Always 0 (Success)
+ * Return: Always NULL (Success)
  */
 char *_strchr(char *s, char c)
 {
@@ -14,5 +14,5 @@ char *_strchr(char *s, char c)
                 if (s[i] == c)
                         return (&s[i]);
         }
-        return (0);
+        return (NULL);
 }
