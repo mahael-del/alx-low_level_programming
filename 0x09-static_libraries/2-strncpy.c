@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-int _atoi(char *s)
 
+char *_strncpy(char *dest, char *src, int n)
 {
-    return atoi(s);
+    return strncpy(dest, src, n);
 }

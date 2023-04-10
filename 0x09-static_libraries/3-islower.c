@@ -1,9 +1,10 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-int _atoi(char *s)
 
+int _islower(int c)
 {
-    return atoi(s);
+    return (c >= 'a' && c <= 'z');
 }
